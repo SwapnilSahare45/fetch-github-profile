@@ -7,15 +7,15 @@ const Profile = () => {
     const { state, getProfile } = useContext(ProfileContext);
 
     const [input, setInput] = useState('')
+ 
 
     const handleSearch = () => {
         if (!input == '') {
             getProfile(input)
             setInput('')
         } else {
-            alert('Please enter name')
+            alert('Enter name')
         }
-
     }
 
     return (
